@@ -22,7 +22,7 @@ A simple bash script to manage TryHackMe VPN connections from the command line.
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/tryhackme-vpn-manager.git
+git clone https://github.com/mbcyberworks/TryHackMe-vpn-manager.git
 cd tryhackme-vpn-manager
 ```
 
