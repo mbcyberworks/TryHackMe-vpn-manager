@@ -44,11 +44,11 @@ stop_vpn() {
     if [ -f "$PIDFILE" ]; then
         echo "🛑 Stopping TryHackMe VPN..."
         if sudo kill "$(cat "$PIDFILE")" 2>/dev/null; then
-            rm -f "$PIDFILE"
+            sudo rm -f "$PIDFILE"
             echo "✅ VPN disconnected."
         else
             echo "❌ Failed to stop VPN process."
-            rm -f "$PIDFILE"  # Clean up stale PID file
+            sudo rm -f "$PIDFILE"  # Clean up stale PID file
         fi
     else
         echo "ℹ️ VPN not running or PID file missing."
